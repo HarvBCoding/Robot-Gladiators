@@ -2,14 +2,13 @@ const playerName = window.prompt("What is your robot's name?");
 let playerHealth = 100;
 let playerAttack = 10;
 let playerMoney = 10;
-// Log multiple values at once
-console.log(playerName, playerAttack, playerHealth);
 
-const enemyName = "Roborto";
+// enemy names, health and attack
+const enemyNames = ["Roborto", "Amy Andriod", "Robo Trumble"];
 let enemyHealth = 50;
 let enemyAttack = 12;
 
-let fight = function() {
+let fight = function(enemyName) {
     // welcome alert
     window.alert("Welcome to Robot Gladiators!");
     // ask player if they would like to fight or skip the fight
@@ -48,9 +47,12 @@ let fight = function() {
         } else {
             fight();
         }
-        window.alert(playerName + " has chosen to skip the fight!");
     } else {
         window.alert("You need to choose a valid option. Try again!");
     }
 };
-fight();
+
+for (let i = 0; i < enemyNames.length; i++) {
+    fight(enemyNames[i]);
+}
+//fight();
