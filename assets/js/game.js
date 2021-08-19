@@ -8,8 +8,6 @@ const playerName = window.prompt("What is your robot's name?");
 let playerHealth = 100;
 let playerAttack = 10;
 let playerMoney = 10;
-// Log multiple values at once
-console.log(playerName, playerAttack, playerHealth);
 
 const enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 let enemyHealth = 50;
