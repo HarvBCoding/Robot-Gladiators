@@ -8,7 +8,6 @@ var enemyHealth = 50;
 var enemyAttack = 12;
 
 // fight function
-debugger;
 var fight = function(enemyName) {
     while (playerHealth > 0 && enemyHealth > 0) {
         // ask player if they'd like to fight or skip
@@ -112,3 +111,5 @@ var endGame = function() {
         window.alert("Thank you for playing Robot Gladiators! Come back soon!")
     }
 };
+
+startGame();
