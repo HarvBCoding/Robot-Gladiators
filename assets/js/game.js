@@ -9,8 +9,8 @@ var fightOrSkip = function() {
     }
 
     // if player picks "skip" confirm and then stop the loop
-    promptfight = promptFight.toLowerCase();
-    
+    promptFight = promptFight.toLowerCase();
+
     if (promptFight === "skip") {
         // confirm player wants to skip
         var confirmSkip = window.confirm("Are you sure you'd like to quit?");
@@ -23,9 +23,9 @@ var fightOrSkip = function() {
 
             // return true if player wants to leave
             return true;
-        } else {
-            return false;
         }
+    } else {
+        return false;
     }
 }
 // fight function
